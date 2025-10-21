@@ -2,9 +2,9 @@
 
 mainly keeping stamp helper up to date lmfao, hope to make some other useful scripts
 
-### Stamp album helper:
+### Wishing Well Faster Wishing
 
-Shows not owned stamps in their respective places even if they're not in your collection, great work by Eat Wooloos As Mutton, I'm just maintaining with new stamp releases.
+Spawns a second button in the Wishing Well so the "Make a Wish" button doesn't feel so lonely :) It just so happens that this second button sends 7 wishes, separated by a timer and a li'l notification so you're not cheating by having a click be more than one action! (Only a stinky cheater would comment the code that spawns the alerts, and we're not cheaters, right?) 
 
 ### Ye Olde Vortex quick change:
 
@@ -18,3 +18,12 @@ Shows links to change active pet in the "Cast your line again?" screen, clicking
 
 THIS WAS GURASE'S IDEA, ALL HAIL GURA
 Pretty much the same idea behind the vortex scripts but it shows petpets in the turmac screen, future improvements could be showing the petpet's names ala grave danger.
+
+### Grave Danger refresh buddy (non-kosher)
+
+Refreshes every 10 minutes while your petpet explores Grave Danger! It allows you to get that one avatar, you know the one. This is very much cheating. Proceed under your own risk!!!!!! (even if no one cares)
+
+### [DEPRECATED] Stamp album helper:
+
+The smart cookies over at ItemDB made a great userscript to replace this one! Check out their work if you haven't!
+Shows not owned stamps in their respective places even if they're not in your collection, great work by Eat Wooloos As Mutton, I'm just maintaining with new stamp releases.
