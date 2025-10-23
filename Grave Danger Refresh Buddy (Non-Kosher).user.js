@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Grave Danger Refresh Buddy (Non-Kosher)
-// @match        https://www.neopets.com/halloween/gravedanger/
+// @match        https://www.neopets.com/halloween/gravedanger/*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
