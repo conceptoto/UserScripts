@@ -4,7 +4,9 @@ mainly keeping stamp helper up to date lmfao, hope to make some other useful scr
 
 ### Wishing Well Faster Wishing
 
-Spawns a second button in the Wishing Well so the "Make a Wish" button doesn't feel so lonely :) It just so happens that this second button sends 7 wishes, separated by a timer and a li'l notification so you're not cheating by having a click be more than one action! (Only a stinky cheater would comment the code that spawns the alerts, and we're not cheaters, right?) 
+Spawns a second button in the Wishing Well so the "Make a Wish" button doesn't feel so lonely :) It just so happens that this second button sends 7 wishes, separated by a timer and a li'l notification so you're not cheating by having a click be more than one action! 
+
+Oh, also I added a lil div thing using data from the lads over at https://itemdb.com.br/ !! Their API is really really cool, check it out (if you're nasty)
 
 ### Ye Olde Vortex quick change:
 
