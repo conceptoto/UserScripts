@@ -2,6 +2,10 @@
 
 mainly keeping stamp helper up to date lmfao, hope to make some other useful scripts
 
+### Quest Log Collect All
+
+Exactly what it says in the name dog... idk what to tell you.... it's mostly stolen code too............. I'M A FRAUD, A HACK AND A FRAUD!!!
+
 ### Wishing Well Faster Wishing
 
 Spawns a second button in the Wishing Well so the "Make a Wish" button doesn't feel so lonely :) It just so happens that this second button sends 7 wishes, separated by a timer and a li'l notification so you're not cheating by having a click be more than one action! 
