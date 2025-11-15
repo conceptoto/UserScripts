@@ -1,6 +1,8 @@
 # Userscrips galore! 
 
-mainly keeping stamp helper up to date lmfao, hope to make some other useful scripts
+### Show Birthday Wheel Ad Button
+
+simple fix for the ad button being hidden by the codes button for the bday wheel.
 
 ### Quest Log Collect All
 
