@@ -1,5 +1,9 @@
 # Userscrips galore! 
 
+### Quickstock Auto Deposit
+
+automatically check all items in quickstock to be deposited, except for one of each: Blue Short Hair Brush, Red Bouncy Ball, The Cowardly Tuskaninny and any Omelette. Tried to make the code as pretty as possible so you can just replace the items 
+
 ### Quest Log Collect All:
 
 Exactly what it says in the name dog... idk what to tell you.... it works like shit bc i didn't add a mutate to close the popup............. I'M A FRAUD, A HACK AND A FRAUD!!!
