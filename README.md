@@ -1,6 +1,10 @@
 # Userscrips galore! 
 
-### Quickstock Auto Deposit
+### ItemDB pricer:
+
+adds the itemdb value to items in a lot of pages
+
+### Quickstock Auto Deposit:
 
 automatically check all items in quickstock to be deposited, except for one of each: Blue Short Hair Brush, Red Bouncy Ball, The Cowardly Tuskaninny and any Omelette. Tried to make the code as pretty as possible so you can just replace the items 
 
