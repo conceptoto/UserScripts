@@ -4,9 +4,9 @@
 // @description  Indicates itemdb's item prices on various pages
 // @author       Original script by senerio
 // @icon         https://itemdb.com.br/logo_icon.svg
-// @match        *://*.neopets.com/shops/wizard.phtml*
 // @match        *://*.neopets.com/inventory.phtml
 // @match        *://*.neopets.com/safetydeposit.phtml*
+// @match        *://*.neopets.com/objects.phtml?type=shop&obj_type=*
 // @match        *://*.neopets.com/quickstock.phtml*
 // @match        *://*.neopets.com/island/tradingpost.phtml*
 // @match        *://*.neopets.com/auctions.phtml*
@@ -63,7 +63,6 @@
         });
     }
 
-
     // pages
 
     async function markItems(page) {
@@ -85,18 +84,18 @@
 
             const itemName = (page.itemNameMatch? item.text().match(page.itemNameMatch)?.[1]: item.text())?.trim();
 
-            console.log("items in inv: ", itemsInInventory)
-            console.log("checking:", `"${itemName}"`, "→", itemsInInventory.includes(itemName));
+            console.log("[ITEMS SEARCHED]: ", itemsInInventory)
+            console.log("[CHECK] checking if: ", `"${itemName},"`, "is in that list: ", itemsInInventory.includes(itemName));
 
             if (!itemName) continue;
 
             if (!itemsInInventory.includes(itemName)){
 
-                //console.log("[Getprice] Running with:", itemName);
+                itemsInInventory.push(itemName);
 
                 const price = await getPrice(itemName);
 
-                //console.log("[Getprice] price:", price);
+                console.log("[GETPRICE] price:", price);
 
                 if (price) {
                     const priceHTML = `<p style="${style}" class="value">ItemDB: ${intl.format(price)} NP</p>`;
@@ -113,7 +112,7 @@
                 }
             }
             else {
-                console.log(itemName, " ya está en la lista, ", itemsInInventory);
+                console.log(itemName, " was already searched for, maybe i should cache it :clueless:");
             }
         }
     }
@@ -135,11 +134,12 @@
             itemNameObject: $('a[href*=buy_item] + br + b'),
             insert: (e, insert) => { return e.parent().find('br').eq(-2).after(insert); }
         },
-        {
-            name: 'sdb',
-            pageMatcher: /safetydeposit/,
-            itemNameObject: $('.content form>table').eq(1).find('tr:not(:first-child):not(:last-child) td:nth-child(2) > b').map((i,v) => v.firstChild)
-        },
+//        ITEMDB ALREADY HAS A BETTER SCRIPT FOR SOURCING PRICES THAN THIS, if you dont want to use it for whatever reason feel free to uncomment these lines
+//        {
+//            name: 'sdb',
+//            pageMatcher: /safetydeposit/,
+//            itemNameObject: $('.content form>table').eq(1).find('tr:not(:first-child):not(:last-child) td:nth-child(2) > b').map((i,v) => v.firstChild)
+//        },
         {
             name: 'quick stock',
             pageMatcher: /quickstock/,
@@ -241,7 +241,6 @@
             const observer = new MutationObserver(() => {
                 markItems(page);
             });
-            console.log("[observer pre]: observer is reacting")
             observer.observe(document.body, {
                 childList: true,
                 subtree: true
