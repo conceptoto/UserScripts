@@ -1,5 +1,10 @@
 # Userscrips galore! 
 
+### Igloo Garage Sale Tracker:
+
+keeps tabs on how many items you've bought for the igloo avatar
+
+
 ### ItemDB pricer:
 
 adds the itemdb value to items in a lot of pages
