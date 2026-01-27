@@ -58,10 +58,10 @@
 
                 if (!thanks){//but you dont see thanks
                     p.appendChild(counterP);
-                    beep();
-
                     const timerP = scheduleRefresh(2); //so the page refreshes in 2 minutes, maybe its not enough time?
                     p.appendChild(timerP);
+                    
+                    beep();
 
                     return;
                 }
